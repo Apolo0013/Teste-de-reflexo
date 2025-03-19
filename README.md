@@ -19,6 +19,8 @@
 - **Ranking:** Salvar os melhores tempos para acompanhar a evolução.  
 - **Modo Competitivo:** Jogar com amigos para ver quem tem o melhor tempo.  
 
+Site: https://apolo0013.github.io/Teste-de-reflexo/
+
 ### 🎨 Referência visual  
 ![Semáforo F1](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/FIA_start_lights_15min_to_formation_lap.svg/1280px-FIA_start_lights_15min_to_formation_lap.svg.png)
 ### 📷Imagens
