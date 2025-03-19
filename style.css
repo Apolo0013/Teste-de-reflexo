@@ -1,0 +1,195 @@
+:root {
+    --cor-vermelho: #FF0000;
+    --cor-verde: #00FF00;
+    --cor-luz-apagada: #333333;
+    --cor-fundo-semaforo: #1A1A1A;
+    --cor-borda: #666666;
+    --cor-diviso: #a7a7a7;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    position: relative;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+button {
+    display: block;
+    width: 300px;
+    height: 100px;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 5px;
+    font-family: 'Roboto Mono', sans-serif;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.226);
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: rgb(211, 211, 211);
+}
+
+.Começa:active {
+    transform: scale(0.98);
+}
+
+@keyframes desa {
+    100% {
+        opacity: 0;
+        transform: scale(1.1) translateY(-200px);
+    }
+}
+
+/*Time*/
+.Time {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    opacity: 0;
+}
+
+@keyframes ShowTime {
+    100% {
+        transform: translateY(200%);
+    }
+}
+
+@keyframes Subir {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.conteiner {
+    width: 500px;
+    height: 430px;
+    background: var(--cor-fundo-semaforo);
+    border: 3px solid var(--cor-borda);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+}
+
+@keyframes desaparece {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes Aparace {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.verde, .vermelho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 190px;
+    background: var(--cor-fundo-semaforo);
+    gap: 10px;
+}
+
+.Bola {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--cor-luz-apagada);
+}
+
+.diviso {
+    width: 95%;
+    height: 2px;
+    background-color: var(--cor-diviso);
+}
+
+
+@media (max-width: 525px) {
+    .conteiner {
+        width: 470px;
+    }
+}
+
+.Novamente {
+    font-size: 15px;
+    box-shadow: none;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ebebeb;
+    opacity: 0;
+}
+
+/*Alterando font pra tabletes paeeeeeeeeeeeeeeeeeeeeeee*/
+@media (min-width: 820px) {
+    .Novamente {
+        font-size: 25px;
+        height: 60px;
+    }
+}
+
+/*Responsividade pra celular paeeeeeeeeee 390x844*/
+@media (max-width: 390px) {
+    .conteiner {
+        width: 350px;
+        height: 400px;
+    }
+    .verde, .vermelho {
+        width: 90%;
+        gap: 10px;
+    }
+    .caixa {
+        gap: 5px;
+    }
+    .diviso {
+        height: 20px;
+        padding: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .Novamente {
+        font-size: 20px;
+    }
+}
