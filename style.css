@@ -162,13 +162,6 @@ button:hover {
     opacity: 0;
 }
 
-/*Alterando font pra tabletes paeeeeeeeeeeeeeeeeeeeeeee*/
-@media (min-width: 820px) {
-    .Novamente {
-        font-size: 25px;
-        height: 60px;
-    }
-}
 
 /*Responsividade pra celular paeeeeeeeeee 390x844*/
 @media (max-width: 390px) {
